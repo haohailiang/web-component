@@ -1,0 +1,20 @@
+import { html, css, LitElement } from './lib/lit-core.min.js';
+
+export class LitCounter extends LitElement {
+    static styles = css`button { color: red }`;
+
+    static properties = {
+        count: { type: Number },
+    };
+
+    constructor() {
+        super();
+        this.count = 0;
+    }
+
+    render() {
+        return html`<button @click="${() => this.count++}">${this.count}</button>`;
+    }
+}
+customElements.define('lit-counter', LitCounter);
+
