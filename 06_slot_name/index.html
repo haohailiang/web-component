@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hello{
+            color:red;
+            font-size: 32px;
+        }
+    </style>
+</head>
+
+<body>
+    <hello-world>
+        <span slot="username">wanzi</span>
+    </hello-world>
+    <template id="hello">
+        <div class="hello">Hello,
+            <slot name="username"></slot>
+        </div>
+    </template>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
