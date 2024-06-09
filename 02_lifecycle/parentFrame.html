@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parent</title>
+    <style>
+        .newParent {
+            border: 1px red solid;
+            margin: 20px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <ol id="consolePanel"></ol>
+    <hello-world message="heheie"></hello-world>
+    <hr>
+    <button id="removeBtn">remove</button>
+    <button id="moveBtn">move</button>
+    <div id="newParent" class="newParent"></div>
+
+
+    <template id="hello">
+        <div class="hello">Hello, Webcomponent</div>
+        <span id="message"></span>
+    </template>
+    <iframe id="frame" src="./childFrame.html" height="800px" width="800px"></iframe>
+
+    <script src="./parentFrame_custom_element.js"></script>
+    <script src="./parentFrame_main.js"></script>
+</body>
+
+</html>
